@@ -1,0 +1,48 @@
+<div class="title">
+    <h1>Edit the Person Details</h1>
+</div>
+<form class="edit-form" (ngSubmit)="updatePerson()">
+    <label class="form-label">First Name:</label>
+    <input class="form-input" type="text" [(ngModel)]="person.firstName" name="firstname" required>
+    <label class="form-label">Last Name:</label>
+    <input class="form-input" type="text" [(ngModel)]="person.lastName" name="lastname" required>
+    <label class="form-label">Age:</label>
+    <input class="form-input" type="number" [(ngModel)]="person.age" name="age" required>
+    <label class="form-label">Gender:</label>
+    <input class="form-input" type="text" [(ngModel)]="person.gender" name="gender" required>
+    <button class="btn btn-update" type="submit">Update</button>
+</form>
+
+<style>
+    .title{
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: #333;
+    }
+
+  .edit-form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  .btn-update {
+    background-color: #28a745;
+    color: white;
+  }
+</style>

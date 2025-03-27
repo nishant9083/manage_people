@@ -1,0 +1,33 @@
+<div class="container" style="margin: 20px 40px 20px 40px;">
+    <div class="card" style="border: 1px solid #ccc; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+        <div class="card-header" style="background-color: #f8f9fa; border-bottom: 1px solid #ccc; padding: 10px;">
+            <h2 style="margin: 0; font-size: 1.25rem; color: #333;">Person Details</h2>
+        </div>
+        <div class="card-body" *ngIf="person" style="padding: 20px;">
+            <div class="row" style="display: flex; flex-wrap: wrap; margin-right: -15px; margin-left: -15px;">
+                <div class="col-md-4" style="flex: 0 0 33.333333%; max-width: 33.333333%; padding-right: 15px; padding-left: 15px; margin-bottom: 15px;">
+                    <p style="margin-bottom: 5px;">
+                        <strong style="font-weight: 600;">ID:</strong> {{ person.id }}
+                    </p>
+                    <p style="margin-bottom: 5px;">
+                        <strong style="font-weight: 600;">First Name:</strong> {{ person.firstName }}
+                    </p>
+                    <p style="margin-bottom: 5px;">
+                        <strong style="font-weight: 600;">Last Name:</strong> {{ person.lastName }}
+                    </p>
+                    <p style="margin-bottom: 5px;">
+                        <strong style="font-weight: 600;">Email:</strong> {{ person.email }}
+                    </p>
+                    <p style="margin-bottom: 5px;">
+                        <strong style="font-weight: 600;">Gender:</strong> {{ person.gender }}
+                    </p>
+                </div>
+                <div class="col-md-4" style="flex: 0 0 33.333333%; max-width: 33.333333%; padding-right: 15px; padding-left: 15px; margin-bottom: 15px;">
+                    <p style="margin-bottom: 5px;"><strong style="font-weight: 600;">Phone:</strong> {{ person.phone }}</p>
+                    <p style="margin-bottom: 5px;"><strong style="font-weight: 600;">City:</strong> {{ person.address.city }}</p>
+                    <p style="margin-bottom: 5px;"><strong style="font-weight: 600;">Country:</strong> {{ person.address.country }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
