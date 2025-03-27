@@ -41,6 +41,17 @@ ng serve
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
+## Dummy APIs for Data
+
+This application can leverage dummy data from [dummyjson.com](https://dummyjson.com/). Specifically, it can use the following endpoint to retrieve user data:
+
+*   **Users:** `https://dummyjson.com/users`
+
+You can integrate these APIs to populate your application with realistic user data. The structure of the data returned from the `users` endpoint is detailed on the [dummyjson documentation](https://dummyjson.com/docs/users) page.
+
+
+
+
 ## Code scaffolding
 
 Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
